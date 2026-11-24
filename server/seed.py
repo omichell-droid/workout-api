@@ -16,7 +16,7 @@ with app.app_context():
     run = Exercise(name="Treadmill Run", category="cardio", equipment_needed=True)
     plank = Exercise(name="Plank", category="balance", equipment_needed=False)
     stretch = Exercise(name="Hamstring Stretch", category="flexibility", equipment_needed=False)
-
+    burpee = Exercise(name="Burpee", category="cardio", equipment_needed=False)    
     print("Creating workouts...")
     leg_day = Workout(date=date(2026, 11, 2), duration_minutes=60, notes="Leg day")
     upper_body = Workout(date=date(2026, 11, 4), duration_minutes=45, notes="Upper body")
