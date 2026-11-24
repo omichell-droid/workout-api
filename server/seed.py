@@ -31,7 +31,7 @@ with app.app_context():
         WorkoutExercise(workout=cardio_day, exercise=run, duration_seconds=1200),
     ]
 
-    db.session.add_all([squat, push_up, run, plank, stretch])
+    db.session.add_all([squat, push_up, run, plank, stretch, burpee])
     db.session.add_all([leg_day, upper_body, cardio_day])
     db.session.add_all(entries)
     db.session.commit()
